@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            /* Attractive Animated Gradient Background */
+            background: linear-gradient(-45deg, #e0eafc, #cfdef3, #e2ebf0, #fdfbfb);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            min-height: 100vh; /* Changed to min-height for better mobile scrolling */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px 0; /* Add vertical padding for mobile */
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .mode-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            border: none;
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            display: block; /* Ensures anchor behaves like a block */
+        }
+
+        .mode-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+        
+        /* --- COLOR SCHEMES --- */
+        .card-normal { 
+            background: linear-gradient(135deg, #0ba360, #3cba92);
+        }
+        .card-serious { 
+            background: linear-gradient(135deg, #00d2ff, #3a7bd5); 
+            color: #000 !important;
+        }
+        .card-funny { 
+            background: linear-gradient(135deg, #ffe259, #ffa751); 
+            color: #000 !important; 
+        }
+        .card-confusing { 
+            background: linear-gradient(135deg, #8b0000, #580000); 
+        }
+
+        .icon { font-size: 3rem; margin-bottom: 15px; }
+        h3 { font-weight: 700; }
+
+        /* --- NOTE SECTION STYLING --- */
+        .disclaimer-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-top: 40px;
+            border-left: 5px solid #ffc107;
+            display: inline-block;
+            max-width: 800px;
+            width: 100%; /* Responsive width */
+        }
+
+        .disclaimer-text {
+            color: #333;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 576px) {
+            h1 { font-size: 2rem; }
+            .mode-card { margin-bottom: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container text-center">
+    <h1 class="text-dark mb-5 fw-bold" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Select Calculator Mode</h1>
+    
+    <div class="row g-4 justify-content-center">
+        <div class="col-md-3 col-sm-6 col-12"> <a href="normal.html" class="card mode-card card-normal p-4">
+                <div class="icon">🧮</div>
+                <h3>Normal</h3>
+                <p class="mb-0">Standard Math Operations</p>
+            </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-12">
+            <a href="serious.html" class="card mode-card card-serious p-4">
+                <div class="icon">🧐</div>
+                <h3>Serious</h3>
+                <p class="mb-0">Formal & High Precision</p>
+            </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-12">
+            <a href="funny.html" class="card mode-card card-funny p-4">
+                <div class="icon">🤡</div>
+                <h3>Funny</h3>
+                <p class="mb-0">Humor & Animations</p>
+            </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-12">
+            <a href="confusing.html" class="card mode-card card-confusing p-4">
+                <div class="icon">😵‍💫</div>
+                <h3>Confusing</h3>
+                <p class="mb-0">Pure Chaos & Errors</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="disclaimer-box">
+        <p class="disclaimer-text">
+            ⚠️ <strong>NOTE:</strong> "Funny" and "Confusing" modes are intentional design choices for entertainment. 
+            Calculations in these modes may be altered, incorrect, or completely randomized!
+        </p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
