@@ -3,7 +3,7 @@
 A browser-based calculator project featuring multiple interactive modes — **Normal**, **Serious**, **Funny**, and **Confusing** — designed to demonstrate UI/UX creativity, JavaScript logic, and frontend experimentation using pure web technologies.
 
 ## 🔗 Live Demo
-👉 https://sachinkp2003-afk.github.io/experimental-calculator/
+👉 https://sachinpkori2003-afk.github.io/experimental-calculator/
 
 ---
 
