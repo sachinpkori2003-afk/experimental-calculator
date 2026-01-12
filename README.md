@@ -58,11 +58,11 @@ This project was built as part of a frontend portfolio to demonstrate:
 
 ## 📂 Project Structure
 experimental-calculator/
-├── index.html # Mode selection page
-├── normal.html # Normal calculator
-├── serious.html # Serious calculator
-├── funny.html # Funny calculator
-└── confusing.html # Confusing calculator
+├index.html # Mode selection page
+├normal.html # Normal calculator
+├serious.html # Serious calculator
+├funny.html # Funny calculator
+└confusing.html # Confusing calculator
 
 
 ---
